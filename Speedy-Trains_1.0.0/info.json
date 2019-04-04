@@ -1,0 +1,11 @@
+{
+	"name": "Speedy-Trains",
+	"version": "1.0.0",
+	"factorio_version": "0.17",
+	"title": "Speedy Trains",
+	"author": "PiggyWhiskey",
+	"description": "Increase Locomotive and Wagon max speed. Increases Locomotive power consumption (To reach those speeds)",
+	"homepage": "n/a",
+	"date": "04.04.2019",
+	"dependencies": ["base >= 0.17.0", "? boblogistics > 0.17.0"]
+}
