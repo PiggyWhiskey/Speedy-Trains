@@ -13,6 +13,9 @@ updateLocomotive(tmp, nil, 4.00, "2400kW", nil, nil, nil, nil, nil)
 local tmp = data.raw["cargo-wagon"]["cargo-wagon"]
 updateCargoWagon(tmp, nil, 4.00, nil, nil, nil, nil, nil)
 
+local tmp = data.raw["fluid-wagon"]["fluid-wagon"]
+updateFluidWagon(tmp, nil, 4.00, nil, nil, nil, nil, nil)
+
 
 if mods["boblogistics"] then
 	----------------------------
@@ -36,6 +39,18 @@ if mods["boblogistics"] then
 	local tmp = data.raw["cargo-wagon"]["bob-cargo-wagon-3"]
 	if tmp then
 		updateCargoWagon(tmp, nil, 16.00, nil, nil, nil, nil, nil)
+	end
+	----------------------------
+
+	----------------------------
+	local tmp = data.raw["fluid-wagon"]["bob-fluid-wagon-2"]
+	if tmp then
+		updateFluidWagon(tmp, nil, 8.00, nil, nil, nil, nil, nil)
+	end
+	
+	local tmp = data.raw["fluid-wagon"]["bob-fluid-wagon-3"]
+	if tmp then
+		updateFluidWagon(tmp, nil, 16.00, nil, nil, nil, nil, nil)
 	end
 	----------------------------
 end
