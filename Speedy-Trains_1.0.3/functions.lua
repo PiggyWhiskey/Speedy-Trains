@@ -29,3 +29,12 @@ function updateFluidWagon ( entity, weight, max_speed, braking_force, friction_f
 	entity.max_health = max_health or entity.max_health
 	entity.inventory_size = inventory_size or entity.inventory_size
 end
+
+
+function getBrakingModifier ( entity )
+	if settings.startup["piggymods-super-brakes"].value then
+		return  (tmp.braking_force * braking_multiplier)
+	else
+		return  nil
+	end
+end
