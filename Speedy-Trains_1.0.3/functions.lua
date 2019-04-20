@@ -32,8 +32,9 @@ end
 
 
 function getBrakingModifier ( entity )
+	local braking_multiplier = 10
 	if settings.startup["piggymods-super-brakes"].value then
-		return  (tmp.braking_force * braking_multiplier)
+		return  (entity.braking_force * braking_multiplier)
 	else
 		return  nil
 	end

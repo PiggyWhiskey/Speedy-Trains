@@ -8,8 +8,6 @@ require("functions")
 --updateFluidWagon ( entity, weight, max_speed, braking_force, friction_force, air_resistance, max_health, capacity )
 
 
-local braking_multiplier = 10
-
 local tmp = data.raw["locomotive"]["locomotive"]
 updateLocomotive(tmp, nil, 4.00, "2400kW", nil, getBrakingModifier(tmp), nil, nil, nil)
 
